@@ -3,6 +3,8 @@
 ## Overview
 This project implements an **infusion pump** system using an STM32 microcontroller. The pump monitors and transmits patient infusion data to a remote server over a **5G modem** connection. 
 
+**Note:** The main application code runs on the **Cortex-M7 (CM7) core**. The CM7 core handles the primary control of the infusion pump, UART communication, and 5G modem management. If applicable, the Cortex-M4 (CM4) core can be used for auxiliary processing.
+
 The firmware is built with **HAL libraries** and manages multiple UART interfaces for communication between the pump, terminal, and modem.
 
 ## Features
